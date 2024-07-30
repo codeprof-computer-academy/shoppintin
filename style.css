@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+
+header span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+}
+
+header span img{
+    width: 30px;
+}
+
+header nav{
+    display: flex;
+    gap:40px;
+}
+
+header nav a{
+    color:grey;
+}
+
+header nav a:hover{
+    color:rgb(212, 70, 5);
+}
+
+header > a{
+    border:1px solid black;
+    padding: 5px 14px;
+    color:black;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+header > a:hover{
+    background-color: rgb(212, 70, 5);
+    color:white;
+    border-color:rgb(212, 70, 5);
+}
+
+main{
+    width: 100%;
+    margin-top: 70px;
+}
+
+#banner{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    background-color: lightcyan;
+}
+
+.left-article{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.left-article h1{
+    font-size: 80px;
+    font-weight: 1000;
+    color:rgb(212, 70, 5);
+    width: 100%;
+}
+
+.left-article a{
+    border: 1px solid darkblue;
+    color:grey;
+    font-size: 25px;
+    padding: 10px 30px;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.left-article a:hover{
+    background-color: darkblue;
+    color:white;
+}
+
+.right-article{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap:50px;
+    padding: 30px 0;
+}
+
+.right-article .big-img{
+    width: 45%;
+    transform: rotate(-25deg) scaleX(-1);
+}
+
+.right-article span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap:30px;
+    margin-top: 30px;
+}
+
+.right-article span img{
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid darkblue;
+    padding: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.right-article span img:hover{
+    transform: scale(1.3);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.right-article span .active{
+    border-color:rgb(212, 70, 5);
+}
+
+#products{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+    background-color: white;
+    gap:80px;
+}
+
+#products h2{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#products article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:50px;
+}
+
+#products article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+
+#products article div small{
+    width: 180px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border: 1px solid darkblue;
+}
+
+#products article div small img{
+    height: 50%;
+    object-fit: contain;
+}
+
+#order{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:80px;
+    padding:100px 0;
+}
+
+#order h2{
+   font-size:50px;
+   font-weight: 100;
+   text-transform: uppercase;
+}
+
+#order article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    padding: 100px;
+}
+
+
+#order article .left-div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30px;
+}
+
+#order article .left-div img{
+    width: 90%;
+    object-fit: contain;
+}
+
+#order article .left-div a{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    width: 90%;
+    border:1px solid black;
+    padding: 10px 20px;
+    
+}
+
+#order article .left-div a img{
+    width: 25px;
+}
+
+#order article .right-div{
+    width: 50%;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:30px;
+}
+
+
+#order article .right-div h3{
+    color:rgb(212, 70, 5);
+}
+
+#order article .right-div button{
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: rgb(212, 70, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#order article .right-div button:hover{
+    background-color: black;
+    border-color: black;
+}
+
+
+#contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:80px;
+    padding: 100px 0;
+}
+
+
+#contact h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#contact article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 100px;
+}
+
+#contact article .map-area{
+    width: 45%;
+    height: 400px;
+    background-image: url("./images/map.png");
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3;
+
+}
+
+#contact article .address-area{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:50px;
+}
+
+#contact article .address-area p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+}
+
+#contact article .address-area p b{
+    color:rgb(212, 70, 5);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#contact article .address-area p small{
+    font-size: 18px;
+}
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer p{
+    font-size: 10px;
+}
